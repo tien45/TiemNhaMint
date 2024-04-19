@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* header  */
+body{
+    width: 100%;
+    height: 100vh;
+}
+#header{
+    width:100%;
+    height:120px;
+    display: block;
+    background-color: rgba(255,255,255,0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+.header-top{
+    margin-top: 20px;
+    display:flex;
+}
+.logo{
+    display: flex;
+    margin-left: 20%;
+    text-decoration: none;
+    color:#000;
+}
+.logo img{
+    width:10%;
+    border-radius: 50%;
+}
+.logo h1{
+    font-size: 30px;
+    font-family: "Dancing Script", cursive;
+}
+.header-top_search{
+    border:2px solid #000;
+    width:50%;
+    display: flex;
+    border-radius: 20px;
+}
+.header-top_search input{
+    background-color: rgba(255,255,255,0.4);
+    width:90%;
+    display: block;
+    border-radius: 20px;
+    border:1px solid transparent;
+    z-index: 1;
+}
+.header-top_search .btn{
+    background-color:#000;
+    border: none;
+    border-radius: 20px;
+    width:70px;
+    border:1px solid #fff;
+    cursor: pointer;
+}
+.header-top_search i{
+    align-items: center;
+    margin:8px;
+    font-size: 20px;
+    color:#fff;
+}
+.header-bottom .navbar{
+    margin: 15px 15%;
+    display: flex;
+    font-size: 20px;
+}
+.header-bottom .navbar li{
+    list-style: none;
+}
+.header-bottom .navbar a{
+    text-decoration: none;
+    display: block;
+    margin-right: 30px;
+    color:#000;
+    font-weight: bolder;
+}
+/* Slider  */
+#slider{
+    width: 100%;
+    height: 100%;
+    margin-top: 120px;
+}
+#slider img{
+    width:100%;
+    height:100%;
+}
+.slide{
+    width: 100%;
+    height:100%;
+    float: left;
+    display: none;
+}
+.active {
+    display: block;
+}
+/* Products  */
+#products{
+    margin: 6%;
+    margin-top: 0;
+    padding-top: 120px;
+    align-items: center;
+    justify-content: center;
+}
+#products h1{
+    text-align: center;
+}
+#products p{
+    text-align: center;
+    font-size: 30px;
+    display: none;
+}
+.row{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.product-sale{
+    position: relative;
+    margin-right: 30px;
+}
+.product{
+    position: relative;
+    margin-right: 30px;
+}
+.product-sale img{
+    width:261px;
+    height:80%;
+    border-radius: 10px;
+}
+.product img{
+    width:261px;
+    height:80%;
+    border-radius: 10px;
+}
+.product-sale h3{
+    text-align: center;
+    margin-left: 0;
+}
+.product h3{
+    text-align: center;
+}
+.product-sale .price{
+    justify-items: space-between;
+    display: flex;
+}
+.product .price{
+    justify-items: space-between;
+    display: flex;
+}
+.price-new{
+    display: block;
+    margin-right: 110px;
+}
+.price-current{
+    font-weight: bolder;
+    margin-left: 35%;
+}
+.price-old{
+    display:block;
+    text-decoration: line-through;
+}
+.product-sale button{
+    margin-left: 30%;
+    font-size: 20px;
+    border:2px solid #000;
+    border-radius: 5px;
+}
+.product button{
+    margin-left: 30%;
+    font-size: 20px;
+    border:2px solid #000;
+    border-radius: 5px;
+}
+.product-sale button a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+.product button a{
+    text-decoration: none;
+    color:#000;
+    font-weight: bold;
+}
+.product-sale button:hover a{
+    background-color: #000;
+    color:#fff;
+}
+.product button:hover a{
+    background-color: #000;
+    color:#fff;
+}
+.product-sale::before{
+    content:"-20%";
+    z-index: 1;
+    padding-top: 10px;
+    position: absolute;
+    width:40px;
+    height:40px;
+    background-color: #000;
+    color:#fff;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 15px;
+}
+/* Shirts */
+#shirts{
+    margin-top: 0;
+    padding-top: 120px;
+    margin-bottom: 50px;
+    flex-wrap:wrap;
+}
+#shirts h1{
+    text-align: center;
+}
+/* Trousers */
+#trousers{
+    padding-top: 120px !important;
+    margin-bottom: 50px;
+}
+#trousers h1{
+    text-align: center;
+}
+/* Dress */
+#dress{
+    padding-top: 120px;
+    margin-bottom: 50px;
+}
+#dress h1{
+    text-align: center;
+}
+/* Skirts */
+#skirts{
+    padding-top: 120px;
+    margin-bottom: 50px;
+}
+#skirts h1{
+    text-align: center;
+}
+/* SET  */
+#set {
+    margin:10%;
+    padding-top: 120px;
+    margin-bottom: 0;
+}
+#set h1{
+    text-align: center;
+}
+#set img{
+    align-items: center;
+    display: block;
+    margin-left: 150px;
+    margin-bottom: 3px;
+}
+/* footer */
+footer{
+    background-color: #ccc;
+}
+.footer{
+    margin:5%;
+    margin-bottom: 0;
+    display: flex;
+}
+.address{
+    width: 60%;
+}
+.address .logo{
+    margin-left: 0;
+}
+.address .logo img{
+    width:10%;
+    border-radius: 50%;
+}
+.phone{
+    display: flex;
+    margin-top: 10px;
+}
+.email{
+    display: flex;
+    margin-top: 10px;
+}
+.category{
+    width:60%;
+}
+.category li{
+    list-style: none;
+}
+.category li a{
+    text-decoration: none;
+    display: block;
+    color:#000;
+    padding-right: 35%;
+    text-align: center;
+}
+.contact h6{
+    font-size: 20px;
+}
+.phone i{
+    margin-top: 5px;
+    margin-right: 3px;
+}
+.email i{
+    margin-top: 5px;
+    margin-right: 3px;
+}
+/* Header Size  */
+.header-size{
+    margin: 10%;
+}
+.header-size .title{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.header-size .logo{
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    margin-left: 37%;
+    margin-bottom: 10px;
+}
+.header-size h3{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header-size p{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+table{
+    font-size: 40px;
+    align-items: center;
+    margin-left: 40px;
+}
+tr{
+    width:100%;
+    height:100%;
+    align-items: center;
+}
+td{
+    width:25%;
+    height:100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+tr .top{
+    color:green;
+    font-weight: 600;
+}
+tr .c{
+    background-color: #ccc;
+}
